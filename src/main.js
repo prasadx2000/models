@@ -63,8 +63,7 @@ gltfLoader.load(
     console.log(gltf)
 
     gltf.scene.scale.set(5,5,5)
-    gltf.scene.position.set(0,0,0)
-    gltf.scene.add(new THREE.AxesHelper())
+    gltf.scene.position.set(1,0,-2)
     scene.add(gltf.scene)
   }
 )
@@ -92,7 +91,7 @@ gui
 /**
  * Lights
  */
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.8)
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.6)
 scene.add(ambientLight)
 
 const directionalLight = new THREE.DirectionalLight(0xffffff, 0.6)
